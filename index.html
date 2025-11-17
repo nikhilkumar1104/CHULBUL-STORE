@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chulbul Toys</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffe4f1;
+      color: #444;
+    }
+
+    /* Header */
+    header {
+      background: #ff4fa5;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      color: white;
+      font-size: 40px;
+      letter-spacing: 2px;
+      margin: 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      animation: popIn 0.7s ease-in-out;
+    }
+
+    .hero h2 {
+      color: #d63384;
+      font-size: 32px;
+      margin-top: 20px;
+      animation: slideDown 1s ease;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: white;
+      color: #ff4fa5;
+      padding: 12px 28px;
+      border-radius: 25px;
+      border: none;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Products Section */
+    .products {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .products h3 {
+      font-size: 28px;
+      color: #d63384;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .card h4 {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #ff4fa5;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Chulbul Toys</h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1601758125147-78a0eae7f0c1" alt="Toy" />
+    <h2>Welcome to Chulbul – The Cutest Toy Store!</h2>
+    <p>Find the cutest soft toys, action figures, puzzles, learning toys & more. A magical world for kids of all ages!</p>
+    <button class="btn">Shop Now</button>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products">
+    <h3>Featured Toys</h3>
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1596464716121-9f3473a2eb2d" alt="Teddy" />
+        <h4>Cute Teddy Bear</h4>
+        <button class="btn">Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1589571894960-20bbe2828a27" alt="Toy Car" />
+        <h4>Toy Car</h4>
+        <button class="btn">Buy Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092160562-0403c7dcd22b" alt="Blocks" />
+        <h4>Building Blocks</h4>
+        <button class="btn">Buy Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Chulbul Toys. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
