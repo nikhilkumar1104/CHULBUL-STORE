@@ -117,6 +117,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZS4M765"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
     <header>
         <div class="logo">Chubul Toys</div>
         <nav>
@@ -124,10 +125,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="product.html">Products</a></li>
                 <li><a href="cart.html">Cart</a></li>
-                <li><a href="https://chubul.netlify.app/payments">Payments</a></li>
+
+                <!-- UPDATED PAYMENT LINK -->
+                <li><a href="https://692012e0fe61143c57d20722--chubul.netlify.app/payments">Payments</a></li>
             </ul>
         </nav>
     </header>
+
     <section class="cart">
         <h1>Your Cart</h1>
         <div id="cart-items"></div>
@@ -135,12 +139,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="total">
                 <p><strong>Total: $<span id="total-price">0.00</span></strong></p>
             </div>
-            <a href="https://chubul.netlify.app/paymentsl" class="btn">Proceed to Checkout</a>
+
+            <!-- UPDATED CHECKOUT BUTTON LINK -->
+            <a href="https://692012e0fe61143c57d20722--chubul.netlify.app/payments" class="btn">Proceed to Checkout</a>
         </div>
     </section>
+
     <footer>
         <p>&copy; 2023 Chubul Toys. All rights reserved.</p>
     </footer>
+
     <script>
         function loadCart() {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
